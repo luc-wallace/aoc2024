@@ -11,17 +11,10 @@ solve input = (partOne, partTwo)
 
 genLists :: String -> ([Int], [Int])
 genLists input =
-  let pairs = map getPair $ lines input
-      first = sort $ map fst pairs
-      second = sort $ map snd pairs
-   in (first, second)
+  let pairs = map getPair $ lines input in (sort $ map fst pairs, sort $ map snd pairs)
   where
     getPair :: String -> (Int, Int)
-    getPair s =
-      let parts = words s
-          n1 = read $ head parts
-          n2 = read $ last parts
-       in (n1, n2)
+    getPair s = let [n1, n2] = words s in (read n1, read n2)
 
 getSimilarity :: Int -> [Int] -> Int
 getSimilarity n l = n * length (filter (n ==) l)
