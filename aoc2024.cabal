@@ -56,7 +56,8 @@ common warnings
 library
     import:           warnings
     exposed-modules:
-        Day01
+        Day01,
+        Day02
     other-extensions: OverloadedStrings, 
                       DuplicateRecordFields
     -- Other library packages from which modules are imported.
