@@ -19,8 +19,6 @@ isSafe r = validDiff && (increasing || decreasing)
 isSafeDamp :: [Int] -> Bool
 isSafeDamp r = isSafe r || any isSafe (removals r)
 
-removals :: [Int] -> [[Int]]
-removals arr = map removeN ns
-  where
-    removeN n = map fst . filter ((/= n) . snd) $ zip arr ns
-    ns = [0 .. length arr - 1]
+removals :: [a] -> [[a]]
+removals [] = []
+removals (x : xs) = xs : map (x:) (removals xs)
