@@ -30,7 +30,7 @@ pOps input = fromJust $ parseMaybe (many ((try . skipUntil) (pMul <|> pDo <|> pD
 filterOps :: [Op] -> [Op]
 filterOps [] = []
 filterOps (op : ops) = case op of
-  Do -> let (muls, rest) = span (/= Dont) ops in filter (/= Do) muls ++ filterOps rest
+  Do -> let (muls, rest) = span (/= Dont) ops in muls ++ filterOps rest
   Dont -> filterOps $ dropWhile (/= Do) ops
   _ -> op : filterOps ops
 
