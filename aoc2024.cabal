@@ -58,7 +58,8 @@ library
     exposed-modules:
         Day01,
         Day02,
-        Day03
+        Day03,
+        Day04
     other-extensions: OverloadedStrings, 
                       DuplicateRecordFields
     -- Other library packages from which modules are imported.

@@ -3,6 +3,7 @@ module Main where
 import Day01 (solve)
 import Day02 (solve)
 import Day03 (solve)
+import Day04 (solve)
 import System.Environment (getArgs)
 import Text.Printf (printf)
 
@@ -26,4 +27,5 @@ solutions =
   [ Day01.solve
   , Day02.solve
   , Day03.solve
+  , Day04.solve
   ]
