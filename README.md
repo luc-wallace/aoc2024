@@ -1,4 +1,4 @@
-# aoc-2024
+# aoc2024
 
 Some solutions for AOC 2024.
 
