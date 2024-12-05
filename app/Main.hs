@@ -4,6 +4,7 @@ import Day01 (solve)
 import Day02 (solve)
 import Day03 (solve)
 import Day04 (solve)
+import Day05 (solve)
 import System.Environment (getArgs)
 import Text.Printf (printf)
 
@@ -28,4 +29,5 @@ solutions =
   , Day02.solve
   , Day03.solve
   , Day04.solve
+  , Day05.solve
   ]
