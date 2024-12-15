@@ -1,0 +1,13 @@
+{
+  "Print to console": {
+    "scope": "haskell",
+    "prefix": "aoc",
+    "body": [
+      "solve :: String -> (Int, Int)",
+      "solve s = (partOne, partTwo)",
+      "  where partOne = 0",
+      "        partTwo = 0",
+    ],
+    "description": "AOC starter",
+  },
+}
